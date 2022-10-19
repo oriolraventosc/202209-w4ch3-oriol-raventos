@@ -1,4 +1,5 @@
 import Keyboard from "../Keyboard/Keyboard";
+import ActionsNumberToCall from "../ActionsNumberToCall/ActionsNumberToCall";
 
 const App = (): JSX.Element => {
   return (
@@ -7,7 +8,10 @@ const App = (): JSX.Element => {
       <main className="phone">
         <Keyboard />
         <div className="actions">
-          <span className="number">667359961</span>
+          <ActionsNumberToCall
+            usedNumbers={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
+            number={0}
+          />
           <a href="index.html" className="call">
             Call
           </a>
