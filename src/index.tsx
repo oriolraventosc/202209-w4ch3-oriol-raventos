@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import App from "./App/App";
+import App from "./components/App/App";
+import PhoneContextProveidor from "./context/PhoneContextProveidor";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <PhoneContextProveidor>
+      <App />
+    </PhoneContextProveidor>
   </React.StrictMode>
 );
 
