@@ -11,11 +11,21 @@ const PhoneContextProveidor = ({
   const [number] = useState([]);
   let [usedNumbers, nextNumber] = useState<number[]>([]);
 
-  const addNumbers = () => {
-    nextNumber(usedNumbers);
+  const addNumbers = (numberClicked: number) => {
+    if (usedNumbers.length === 9) {
+      return;
+    }
+    nextNumber([...usedNumbers, numberClicked]);
   };
+
+  const deleteNumbers = () => {
+    nextNumber((usedNumbers = []));
+  };
+
   return (
-    <NumbersContext.Provider value={{ number, usedNumbers, addNumbers }}>
+    <NumbersContext.Provider
+      value={{ number, usedNumbers, addNumbers, deleteNumbers }}
+    >
       {children}
     </NumbersContext.Provider>
   );
