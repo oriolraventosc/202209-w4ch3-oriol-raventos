@@ -9,8 +9,13 @@ const PhoneContextProveidor = ({
   children,
 }: NumbersContextProveidorProps): JSX.Element => {
   const [number] = useState([]);
+  let [usedNumbers, nextNumber] = useState<number[]>([]);
+
+  const addNumbers = () => {
+    nextNumber(usedNumbers);
+  };
   return (
-    <NumbersContext.Provider value={{ number }}>
+    <NumbersContext.Provider value={{ number, usedNumbers, addNumbers }}>
       {children}
     </NumbersContext.Provider>
   );
