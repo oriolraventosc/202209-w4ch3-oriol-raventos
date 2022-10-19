@@ -8,7 +8,7 @@ interface NumbersContextProveidorProps {
 const PhoneContextProveidor = ({
   children,
 }: NumbersContextProveidorProps): JSX.Element => {
-  const [number, setState] = useState([]);
+  const [number] = useState([]);
   return (
     <NumbersContext.Provider value={{ number }}>
       {children}
