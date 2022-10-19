@@ -1,5 +1,6 @@
 import Keyboard from "../Keyboard/Keyboard";
 import ActionsNumberToCall from "../ActionsNumberToCall/ActionsNumberToCall";
+import ActionsCallButton from "../ActionsCallButton/ActionsCallButton";
 
 const App = (): JSX.Element => {
   return (
@@ -8,13 +9,8 @@ const App = (): JSX.Element => {
       <main className="phone">
         <Keyboard />
         <div className="actions">
-          <ActionsNumberToCall
-            usedNumbers={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
-            number={0}
-          />
-          <a href="index.html" className="call">
-            Call
-          </a>
+          <ActionsNumberToCall />
+          <ActionsCallButton />
           <a href="index.html" className="hang active">
             Hang
           </a>

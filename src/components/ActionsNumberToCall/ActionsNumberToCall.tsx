@@ -1,8 +1,8 @@
-import numbersInterface from "../../data/types";
+import { useContext } from "react";
+import NumbersContext from "../../context/phoneContext";
 
-const ActionsNumberToCall = ({
-  usedNumbers,
-}: numbersInterface): JSX.Element => {
-  return <span className="number">{usedNumbers.join("")}</span>;
+const ActionsNumberToCall = (): JSX.Element => {
+  const { usedNumbers } = useContext(NumbersContext);
+  return <span className="number">{usedNumbers}</span>;
 };
 export default ActionsNumberToCall;
