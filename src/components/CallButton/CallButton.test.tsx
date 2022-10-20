@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import mockMobilePhone from "../../../mocks/mockMobilePhone";
 import NumberContext from "../../context/phoneContext";
 
-describe("Given an Action component", () => {
+describe("Given a CallButton component", () => {
   describe("When it's rendered", () => {
     test("Then a button must be shown with the text 'Call'", () => {
       render(
