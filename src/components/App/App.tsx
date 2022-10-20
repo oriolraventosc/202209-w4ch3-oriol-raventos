@@ -1,8 +1,8 @@
 import Keyboard from "../Keyboard/Keyboard";
 import ActionsNumberToCall from "../Display/ActionsNumberToCall";
-import ActionsCallButton from "../ActionsCallButton/ActionsCallButton";
+import CallButton from "../CallButton/CallButton";
 import Info from "../Info/Info";
-import ActionsHangButton from "../ActionsHangButton/ActionsHangButton";
+import HangButton from "../HangButton/HangButton";
 
 const App = (): JSX.Element => {
   return (
@@ -12,8 +12,8 @@ const App = (): JSX.Element => {
         <Keyboard />
         <div className="actions">
           <ActionsNumberToCall />
-          <ActionsCallButton />
-          <ActionsHangButton />
+          <CallButton />
+          <HangButton />
         </div>
       </main>
     </div>

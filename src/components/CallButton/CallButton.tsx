@@ -1,16 +1,13 @@
 import { useContext } from "react";
 import NumbersContext from "../../context/phoneContext";
 
-const ActionsCallButton = (): JSX.Element => {
+const CallButton = (): JSX.Element => {
   const { buttonInitialClass, changeToCall } = useContext(NumbersContext);
+
   return (
-    <a
-      href="#none"
-      onClick={() => changeToCall()}
-      className={buttonInitialClass}
-    >
+    <a href=" # " onClick={() => changeToCall()} className={buttonInitialClass}>
       Call
     </a>
   );
 };
-export default ActionsCallButton;
+export default CallButton;
