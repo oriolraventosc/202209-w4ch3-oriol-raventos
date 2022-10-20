@@ -11,7 +11,7 @@ const PhoneContextProveidor = ({
   const [number] = useState([]);
   let [usedNumbers, nextNumber] = useState<number[]>([]);
   let [buttonInitialClass, buttonNewClass] = useState<string>("call");
-  let [beforeCall, inCall] = useState<string>("off");
+  let [beforeCall, inCall] = useState<string>("message  off");
   let [hangBefore, hangAfter] = useState<string>("off");
 
   const addNumbers = (numberClicked: number) => {
