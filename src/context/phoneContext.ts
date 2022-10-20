@@ -6,6 +6,11 @@ interface numbersContextStructure {
   usedNumbers: number[];
   addNumbers: (numberClicked: number) => void;
   deleteNumbers: () => void;
+  buttonInitialClass: string;
+  changeToCall: () => void;
+  beforeCall: string;
+  changeButtons: () => void;
+  hangBefore: string;
 }
 
 const NumbersContext = createContext<numbersContextStructure>(
