@@ -8,9 +8,9 @@ describe("Given a Info component", () => {
 
       render(<Info />);
 
-      const info = screen.queryByText("Calling...");
+      const info = screen.queryByText(expectedText);
 
-      expect(info).toHaveTextContent(expectedText);
+      expect(info).toBeInTheDocument();
     });
   });
 });

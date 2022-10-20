@@ -16,7 +16,7 @@ const PhoneContextProveidor = ({
 
   const addNumbers = (numberClicked: number) => {
     if (usedNumbers.length === 9) {
-      buttonNewClass("active");
+      buttonNewClass("call active");
       return;
     }
     nextNumber([...usedNumbers, numberClicked]);
