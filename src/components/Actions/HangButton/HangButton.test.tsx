@@ -1,7 +1,7 @@
 import HangButton from "./HangButton";
 import { render, screen } from "@testing-library/react";
-import mockMobilePhone from "../../../mocks/mockMobilePhone";
-import NumberContext from "../../context/phoneContext";
+import mockMobilePhone from "../../../../mocks/mockMobilePhone";
+import NumberContext from "../../../context/phoneContext";
 
 describe("Given an HangButton component", () => {
   describe("When it's rendered", () => {
