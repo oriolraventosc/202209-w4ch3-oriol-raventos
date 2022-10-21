@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import NumbersContext from "../../context/phoneContext";
+import NumbersContext from "../../../context/phoneContext";
 
 const HangButton = (): JSX.Element => {
   const { hangBefore } = useContext(NumbersContext);

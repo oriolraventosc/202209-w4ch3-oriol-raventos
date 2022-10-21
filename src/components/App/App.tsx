@@ -1,8 +1,8 @@
 import Keyboard from "../Keyboard/Keyboard";
 import ActionsNumberToCall from "../Display/ActionsNumberToCall";
-import CallButton from "../CallButton/CallButton";
+import CallButton from "../Actions/CallButton/CallButton";
 import Info from "../Info/Info";
-import HangButton from "../HangButton/HangButton";
+import HangButton from "../Actions/HangButton/HangButton";
 
 const App = (): JSX.Element => {
   return (
